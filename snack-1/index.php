@@ -8,19 +8,19 @@ Olimpia Milano - Cantù | 55-60 -->
 $matches = [
     [
         "s_ospite" => "Olimpia" ,
-        "s_ casa" => 'Cantù',
+        "s_casa" => 'Cantù',
         "punti_ospite" => 55,
         "punti_casa" => 65,
     ],
     [
         "s_ospite" => "Bulls" ,
-        "s_ casa" => 'Leakers',
+        "s_casa" => 'Leakers',
         "punti_ospite" => 45,
         "punti_casa" => 60,
     ],
     [
         "s_ospite" => "Milan" ,
-        "s_ casa" => 'inter',
+        "s_casa" => 'inter',
         "punti_ospite" => 30,
         "punti_casa" => 34,
     ]
@@ -39,7 +39,7 @@ var_dump($matches[0]["s_ospite"]);
 <body>
     <?php
     for ($i = 0; $i < count($matches); $i++){
-        echo $matches[$i]["s_ospite"];
+        echo $matches[$i]["s_ospite"] .' - ' .$matches[$i]["s_casa"] .' | ' .$matches[$i]["punti_ospite"] .' - ' .$matches[$i]["punti_casa"];
     }
 
     ?>
