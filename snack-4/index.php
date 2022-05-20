@@ -2,6 +2,7 @@
 <?php
 $array = [];
 var_dump(rand(1, 100));
+
 while (count($array) < 15){
     $int = rand(1, 100);
     if (!in_array($int, $array)){
