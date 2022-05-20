@@ -37,10 +37,11 @@ var_dump($matches[0]["s_ospite"]);
     <title>Snack 1</title>
 </head>
 <body>
-    <?php
-    for ($i = 0; $i < count($matches); $i++){
-        echo $matches[$i]["s_ospite"] .' - ' .$matches[$i]["s_casa"] .' | ' .$matches[$i]["punti_ospite"] .' - ' .$matches[$i]["punti_casa"];
-    }
+    <?php for ($i = 0; $i < count($matches); $i++){ ?>
+        <h3> 
+            <?php echo $matches[$i]["s_ospite"] .' - ' .$matches[$i]["s_casa"] .' | ' .$matches[$i]["punti_ospite"] .' - ' .$matches[$i]["punti_casa"]; ?>
+        </h3> 
+    <?php }
 
     ?>
 </body>
