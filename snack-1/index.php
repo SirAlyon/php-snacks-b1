@@ -7,7 +7,7 @@ Olimpia Milano - Cantù | 55-60 -->
 <?php 
 $matches = [
     [
-        "s_ospite" => "Olimpia" ,
+        "s_ospite" => "Olimpia Milano" ,
         "s_casa" => 'Cantù',
         "punti_ospite" => 55,
         "punti_casa" => 65,
