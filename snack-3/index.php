@@ -59,15 +59,25 @@ $posts = [
 
 <body>
 
-    <?php foreach ($posts as $date => $dateposts) { ?>
+    <?php foreach ($posts as $date => $posts) { ?>
         <h2><?php echo $date ?></h2>
-        <hr>
-        <?php foreach ($dateposts as $post) {
-            foreach ($post as $key => $info) { ?>
-                <p><?php echo $key . ': ' . $info ?></p>
+        <?php foreach ($posts as $post) { ?>
+            <div>
+                <strong>Title: </strong>
+                <span><?= $post['title'] ?></span>
+            </div>
+            <div>
+                <strong>Author: </strong>
+                <span><?= $post['author'] ?></span>
+            </div>
+            <div>
+                <strong>Text: </strong>
+                <span><?= $post['text'] ?></span>
+            </div>
+            <hr>
+
 
     <?php }
-        }
     } ?>
 </body>
 
