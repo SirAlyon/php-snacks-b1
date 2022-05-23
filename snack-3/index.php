@@ -59,19 +59,16 @@ $posts = [
 
 <body>
 
-    <?php
-    foreach ($posts as $date => $dateposts) {?>
+    <?php foreach ($posts as $date => $dateposts) { ?>
         <h2><?php echo $date ?></h2>
         <hr>
-        <?php foreach ($dateposts as $post) { 
-            foreach($post as $key => $info){ ?>
-                <p><?php echo $key .': ' .$info ?></p>
-                
-            <?php }
-        }
-    }
+        <?php foreach ($dateposts as $post) {
+            foreach ($post as $key => $info) { ?>
+                <p><?php echo $key . ': ' . $info ?></p>
 
-    ?>
+    <?php }
+        }
+    } ?>
 </body>
 
 </html>
