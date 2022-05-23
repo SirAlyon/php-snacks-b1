@@ -25,6 +25,7 @@ var_dump($p);
     <strong>Main Paragraph:</strong>
     <p><?= $p ?></p>
     <hr>
+    <strong>Exploded Paragraph ('.')</strong>
     <?php foreach($newP as $p) : ?>
         <p><?= $p ?></p>
     <?php endforeach; ?>
